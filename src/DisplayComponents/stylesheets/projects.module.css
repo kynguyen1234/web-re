@@ -1,0 +1,39 @@
+.projectListContainer {
+  height: 100%;
+  width: 100%;
+  padding: 25px 10px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: auto;
+}
+
+.projectSidebar {
+  grid-column: 1;
+  padding: 0 10px;
+  border-right: aliceblue 5px solid;
+}
+
+.projectList {
+  margin: 0;
+  /* height: 100%; */
+  grid-column: 2;
+  padding: 0 35px;
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow-y: scroll;
+}
+
+.projectListItem {
+  background: aliceblue;
+  width: 30%;
+  min-width: 300px;
+  min-height: 210px;
+  margin: 15px;
+  padding-top: 25%;
+  overflow: visible;
+  position: relative;
+  flex-grow: 1;
+}
